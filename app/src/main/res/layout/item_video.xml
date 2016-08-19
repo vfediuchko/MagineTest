@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_view_height"
+    android:layout_marginTop="@dimen/item_layout_margin"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="@dimen/item_view_height"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/item_control_margin" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="@dimen/item_control_margin"
+        android:layout_marginStart="@dimen/item_control_margin"
+        android:layout_marginTop="@dimen/item_control_margin"
+        android:layout_toEndOf="@id/image"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/font_size_title"
+        tools:text="Title" />
+
+    <TextView
+        android:id="@+id/studio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_margin="@dimen/item_control_margin"
+        android:layout_toEndOf="@id/image"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/font_size_studio"
+        tools:text="subtitle" />
+
+</RelativeLayout>
